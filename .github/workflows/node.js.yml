@@ -19,8 +19,9 @@ jobs:
       
       with:
         node-version: '24.x'
-    - name: install newman
+        
+  - name: install newman
     run: npm install -g newman
-    - name: run test
-    run: newman run Projects.postman_collection.json
+  - name: run test
+    run: newman run projects.postman_collection.json
     
